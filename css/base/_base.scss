@@ -1,0 +1,236 @@
+/*============Sticky Footer============*/
+
+html{
+  font-size:62.5%;
+  height:100%;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  height:100%;
+  min-height: 100%;
+  height:auto!important;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+#wrap{
+  flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  position: relative;
+  right:0;
+  -webkit-transition: right .5s;
+  -moz-transition: right .5s;
+  -o-transition: right .5s;
+  transition: right .5s;
+}
+
+.clear{clear:both;}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+.alignright,
+img.alignright {
+  float:right;
+  margin:0 0 15px 30px;
+}
+
+img.alignleft,
+.alignleft {
+  float:left;
+  margin:0 30px 15px 0;
+}
+
+img.aligncenter{
+  display: block;
+  margin:0 auto;
+}
+
+* {outline:none!important;}
+
+/*==========Fonts & Headings===========*/
+
+body{
+	font-family:$bodyfont;
+	color:$body;
+  font-size: 16px;
+}
+
+h1,h2,h3,h4,h5{
+  font-weight:300;
+}
+
+h1{
+  font-size: 96px;
+  margin:0 0 20px 0;
+}
+
+h2{
+  font-size: 76px;
+  margin:0 0 20px 0;
+}
+
+h3{
+  font-size: 56px;
+  margin:0 0 20px 0;
+}
+
+h4{
+  font-size: 36px;
+  margin:0 0 20px 0;
+}
+
+h5{
+  font-size: 26px;
+  margin:0 0 20px 0;
+}
+
+p{
+  margin:0 0 20px 0;
+}
+
+ol,ul{
+  margin:0 0 20px 0;
+}
+
+strong{font-weight:bold}
+
+a{
+  color:$alpha;
+  text-decoration:none; 
+  -webkit-transition: all 0.2s ease; 
+  -moz-transition: all 0.2s ease; 
+  -o-transition: all 0.2s ease; 
+  transition: all 0.2s ease;
+}
+
+a:visited,
+a:hover,
+a:active{
+  text-decoration:none;
+}
+
+.margin-top {
+  margin-top: 120px;
+  @include sm {margin-top: 60px;}
+  @include xs {margin-top: 30px;}
+}
+
+.margin-bottom {
+  margin-bottom: 120px;
+  @include sm {margin-bottom: 60px;}
+  @include xs {margin-bottom: 30px;}
+}
+
+.margin {
+  margin: 120px 0;
+  @include sm {margin: 60px 0;}
+  @include xs {margin: 30px 0;}
+}
+
+.padding-top {
+  padding-top: 120px;
+  @include sm {padding-top: 60px;}
+  @include xs {padding-top: 30px;}
+}
+
+.padding-bottom {
+  padding-bottom: 120px;
+  @include sm {padding-bottom: 60px;}
+  @include xs {padding-bottom: 30px;}
+}
+
+.padding {
+  padding: 120px 0;
+  @include sm {padding: 60px 0;}
+  @include xs {padding: 30px 0;}
+}
+
+.search-results-wrapper{
+  margin-top:30px;
+  margin-bottom:60px;
+}
+.search {
+  .search-header {
+    margin-bottom: 60px;
+    @include mobile{
+      margin-bottom: 30px;
+    }
+  }
+  .blog-article {
+    padding-left: 95px;
+    margin-bottom: 60px;
+    position: relative;
+    .result-num {
+      font-size: 40px;
+      display: inline-block;
+      padding: 20px 15px;
+      width: 65px;
+      text-align: center;
+      border: 1px solid #d7d7d7;
+      position: absolute;
+      left: 0;
+      top: 0;
+      /*height: 100%;*/
+      color:$alpha;
+    }
+    h4{
+      @include mobile{
+        font-size:20px;
+      }
+    }
+    p{
+      i{
+        font-size:14px;
+      }
+    }
+    a{
+      color:$alpha;
+    }
+  }
+  .search-form {
+    width: 100%;
+    margin: 40px 0 90px;
+    label {
+      float: left;
+      width: 85%;
+    }
+    .search-field {
+      border: none;
+      background-color: #ebebeb;
+      -webkit-border-top-left-radius: 20px;
+      -webkit-border-bottom-left-radius: 20px;
+      -moz-border-radius-topleft: 20px;
+      -moz-border-radius-bottomleft: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      font-style: italic;
+      font-size: 14px;
+      font-size: 1.4rem;
+      padding: 7px 20px;
+      width: 100%;
+    }
+    .search-submit {
+      width: 10%;
+      text-indent: -999px;
+      border: none;
+      background-color: #ebebeb;
+      padding: 5.5px 20px;
+      -webkit-border-top-right-radius: 20px;
+      -webkit-border-bottom-right-radius: 20px;
+      -moz-border-radius-topright: 20px;
+      -moz-border-radius-bottomright: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background-image: url('images/search.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+}

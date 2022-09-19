@@ -1,0 +1,87 @@
+#footer{
+  #footer-body{
+    margin-top:70px;
+    margin-bottom:55px;
+    .col-12{
+      display:flex;
+      justify-content: space-between;
+      .right{
+        .social{
+          margin-bottom:15px;
+          a{
+            font-size:24px;
+            margin-right:16px;
+            &:nth-of-type(1){
+              color:$echo;
+            }
+            &:nth-of-type(2){
+              color:$foxtrot;
+            }
+            &:nth-of-type(3){
+              color:$golf;
+            }
+            &:nth-of-type(4){
+              color:$hotel;
+            }
+          }
+        }
+        .contact-info{
+          a{
+            display:block;
+            font-size:22px;
+            margin-bottom:15px;
+            &:hover{
+              color:$bravo;
+            }
+          }
+        }
+      }
+    }
+  }
+  #footer-terms{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-top:1px solid $delta;
+    padding-top:22px;
+    padding-bottom:22px;
+    .col-12{
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      .left{
+        display:flex;
+        .footer-menu{
+          ul{
+            padding:0;
+            margin:0;
+            li{
+              display:inline-block;
+              border-left:1px solid $body;
+              line-height:12px;
+              margin-left:15px;
+              padding-left:15px;
+              a{
+                &:hover{
+                  color:$bravo;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right{
+        .site-by{
+          text-align: right;
+          display: block;
+          color:$alpha;
+          text-decoration: none;
+          &:hover{
+            color:$bravo;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

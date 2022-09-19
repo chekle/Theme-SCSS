@@ -1,0 +1,112 @@
+/* Header
+==============================*/
+#header{
+  padding-top:32px;
+  padding-bottom:32px;
+  .col-12{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-menu{
+    ul{
+      padding:0; 
+      margin:0; 
+      display:inline-block; 
+      position:relative;
+      li{
+        display:inline-block; 
+        padding:0; 
+        margin:0; 
+        position:relative;
+        &:not(:last-child){
+          margin-right:20px;
+        }
+        &.menu-item-has-children{
+          a{
+            i{
+              margin-left:5px;
+            }
+          }
+        }
+        &.menu-item-has-children > a:after {
+          font: var(--fa-font-solid);
+          content: "\f078";
+          margin-left: 5px;
+          font-weight:500;
+        }
+        &.sub-menu-active.menu-item-has-children > a:after {
+          font: var(--fa-font-solid);
+          content: "\f077";
+          display: inline-block;
+          font-weight:500;
+        }
+        &.current_page_item{
+          a{
+            &:before{
+              visibility: visible;
+            }
+          }
+        }
+        &.menu-button{
+          margin-left:16px;
+          a{
+            border:1px solid $bravo;
+            color:$bravo;
+            border-radius:10px;
+            padding:13px 20px;
+            &:before{
+              display:none;
+            }
+            i{
+              margin-right:5px;
+            }
+            &:hover{
+              background-color:$bravo;
+              color:white;
+            }
+          }
+        }
+        a{
+          font-size:14px;
+          text-transform:uppercase;
+          font-weight:500;
+          color:$charlie;
+          &:before{
+            font: var(--fa-font-solid);
+            content: "\f111";
+            display: inline-block;
+            font-weight:600;
+            font-size:12px;
+            color:$bravo;
+            position:relative;
+            left:-7px;
+            top:-0.5px;
+            visibility: hidden;
+          }
+          &:hover{
+            color:$bravo;
+            &:before{
+              visibility: visible;
+            }
+          }
+        }
+      }
+      .sub-menu-wrap{
+        display:none; 
+        position:absolute; 
+        white-space:nowrap; 
+        top:100%; 
+        left:-5px; 
+        z-index:99999; 
+        text-align:left; 
+        overflow:hidden; 
+        padding:0;
+        li {
+          display: block;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
