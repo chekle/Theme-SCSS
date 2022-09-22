@@ -116,6 +116,13 @@ a:active{
   text-decoration:none;
 }
 
+.container{
+  @include xs{
+    padding-left:15px;
+    padding-right:15px;
+  }
+}
+
 .margin-top {
   margin-top: 120px;
   @include sm {margin-top: 60px;}
