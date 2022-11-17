@@ -31,5 +31,6 @@ jQuery(document).ready(function () {
   jQuery("#mobileNav .menu-item-has-children .menu-drop").on('click touch', function () {
     jQuery(this).siblings(".sub-menu").stop().slideToggle(500);
     jQuery(this).toggleClass('sub-menu-active');
+    jQuery(this).parent().toggleClass('menu-active');
   });
 });
