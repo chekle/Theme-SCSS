@@ -72,23 +72,8 @@
           text-transform:uppercase;
           font-weight:500;
           color:$charlie;
-          &:before{
-            font: var(--fa-font-solid);
-            content: "\f111";
-            display: inline-block;
-            font-weight:600;
-            font-size:12px;
-            color:$bravo;
-            position:relative;
-            left:-7px;
-            top:-0.5px;
-            visibility: hidden;
-          }
           &:hover{
             color:$bravo;
-            &:before{
-              visibility: visible;
-            }
           }
         }
       }
