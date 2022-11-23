@@ -1,11 +1,9 @@
-//Fonts 
-
+//Fonts
 WebFont.load({
   google: {
     families: ['Open+Sans:400,600', 'Quicksand:300,400,500,600']
   }
 });
-
 
 //Menus Dropdowns
 jQuery(document).ready(function () {
