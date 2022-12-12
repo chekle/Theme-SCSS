@@ -143,36 +143,42 @@ a:active{
 
 .margin-top {
   margin-top: 120px;
+  @include md {margin-top: 90px;}
   @include sm {margin-top: 60px;}
   @include xs {margin-top: 30px;}
 }
 
 .margin-bottom {
   margin-bottom: 120px;
+  @include md {margin-bottom: 90px;}
   @include sm {margin-bottom: 60px;}
   @include xs {margin-bottom: 30px;}
 }
 
 .margin {
   margin: 120px 0;
+  @include md {margin: 90px 0;}
   @include sm {margin: 60px 0;}
   @include xs {margin: 30px 0;}
 }
 
 .padding-top {
   padding-top: 120px;
+  @include md {padding-top: 90px;}
   @include sm {padding-top: 60px;}
   @include xs {padding-top: 30px;}
 }
 
 .padding-bottom {
   padding-bottom: 120px;
+  @include md {padding-bottom: 90px;}
   @include sm {padding-bottom: 60px;}
   @include xs {padding-bottom: 30px;}
 }
 
 .padding {
   padding: 120px 0;
+  @include md {padding: 90px 0;}
   @include sm {padding: 60px 0;}
   @include xs {padding: 30px 0;}
 }
