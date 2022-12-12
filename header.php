@@ -52,7 +52,7 @@
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMobileMenu" aria-labelledby="offcanvasMobileMenuLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasMobileMenuLabel">Offcanvas</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-light fa-xmark"></i></button>
     </div>
     <div class="offcanvas-body" id="mobileNav">
       <?php wp_nav_menu( array('theme_location' => 'main-menu', 'container' => 'nav', 'container_class' => 'mobile-main-menu ')); ?>
