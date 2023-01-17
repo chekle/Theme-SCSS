@@ -5,7 +5,7 @@
  */
 
 get_header(); ?>
-
-	<?php get_template_part('components/content_components');?>
-
+	<main>
+		<?php get_template_part('components/content_components');?>
+	</main>
 <?php get_footer(); ?>
