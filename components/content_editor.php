@@ -1,4 +1,4 @@
-<section class="content-editor">
+<section class="content-editor margin">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
