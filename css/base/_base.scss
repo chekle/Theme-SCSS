@@ -52,6 +52,14 @@ img.aligncenter{
   margin:0 auto;
 }
 
+.wp-caption{
+  width:100%!important;
+  .wp-caption-text{
+    padding-top:10px;
+    font-size:16px;
+  }
+}
+
 * {outline:none!important;}
 
 /*==========Fonts & Headings===========*/
