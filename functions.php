@@ -103,10 +103,10 @@ class megaMenu extends Walker_Nav_Menu {
 /* Add ACF Options Page */
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page(array(
-		'page_title'    => 'Site Settings',
-		'menu_title'    => 'Site Settings',
-		'menu_slug'     => 'site-settings',
-		'icon_url'      => 'dashicons-share',
+		'page_title'    => 'Theme Options',
+		'menu_title'    => 'Theme Options',
+		'menu_slug'     => 'theme-options',
+		'icon_url'      => 'dashicons-admin-generic',
 		'position'      => 6,
 		'capability'    => 'edit_posts',
 		'redirect'      => false
