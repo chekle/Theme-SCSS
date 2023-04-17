@@ -150,6 +150,24 @@ a:active{
   }
 }
 
+.margin {
+  margin: 120px 0;
+  @include md {margin: 90px 0;}
+  @include sm {margin: 60px 0;}
+  @include xs {margin: 30px 0;}
+}
+
+.margin-md {
+  margin: 90px 0;
+  @include sm {margin: 60px 0;}
+  @include xs {margin: 30px 0;}
+}
+
+.margin-sm {
+  margin: 60px 0;
+  @include xs {margin: 30px 0;}
+}
+
 .margin-top {
   margin-top: 120px;
   @include md {margin-top: 90px;}
@@ -164,11 +182,22 @@ a:active{
   @include xs {margin-bottom: 30px;}
 }
 
-.margin {
-  margin: 120px 0;
-  @include md {margin: 90px 0;}
-  @include sm {margin: 60px 0;}
-  @include xs {margin: 30px 0;}
+.padding {
+  padding: 120px 0;
+  @include md {padding: 90px 0;}
+  @include sm {padding: 60px 0;}
+  @include xs {padding: 30px 0;}
+}
+
+.padding-md {
+  padding: 90px 0;
+  @include sm {padding: 60px 0;}
+  @include xs {padding: 30px 0;}
+}
+
+.padding-sm {
+  padding: 60px 0;
+  @include xs {padding: 30px 0;}
 }
 
 .padding-top {
@@ -183,13 +212,6 @@ a:active{
   @include md {padding-bottom: 90px;}
   @include sm {padding-bottom: 60px;}
   @include xs {padding-bottom: 30px;}
-}
-
-.padding {
-  padding: 120px 0;
-  @include md {padding: 90px 0;}
-  @include sm {padding: 60px 0;}
-  @include xs {padding: 30px 0;}
 }
 
 .search-results-wrapper{
