@@ -41,7 +41,7 @@
       <div class="row">
         <div class="col-12">
           <a href="<?php echo home_url(); ?>" class="header-logo"><img src="<?php bloginfo('template_directory'); ?>/images/logo.svg"/></a>
-          <?php wp_nav_menu( array('theme_location' => 'main-menu', 'container' => 'nav','container_class' => 'main-menu d-none d-lg-block','walker' => new megaMenu())); ?>
+          <?php wp_nav_menu( array('theme_location' => 'main-menu', 'container' => 'nav', 'container_class' => 'main-menu d-none d-lg-block', 'walker' => new megaMenu())); ?>
           <a class="d-inline-block d-lg-none navToggle" data-bs-toggle="offcanvas" href="#offcanvasMobileMenu" role="button" aria-controls="offcanvasMobileMenu"><i class="fa-solid fa-bars"></i></a>
         </div>
       </div>
